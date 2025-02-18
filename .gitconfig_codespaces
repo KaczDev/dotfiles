@@ -1,0 +1,18 @@
+[user]
+	email = kaczdev@github.com
+	name = KaczDev
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[color]
+	ui = auto
+[url "https://github.com"]
+  insteadOf = git@github.com:
+[init]
+    defaultBranch = main
+[push]
+    # Automatically set origin as the remote for current branch
+    autoSetupRemote = true
+[pull]
+    rebase = true

@@ -6,6 +6,8 @@ function link_files() {
 	rm "$HOME/.zshrc"
 	rm "$HOME/.zsh_aliases"
 	stow -t "$HOME" .
+	rm "$HOME/.gitconfig"
+	mv ./gitconfig_codespaces "$HOME/.gitconfig"
 	if [ -d /workspaces/github ]; then
 	  sudo ln -sf /workspaces/github/bin/rubocop /usr/local/bin/rubocop
 	  sudo ln -sf /workspaces/github/bin/srb /usr/local/bin/srb
@@ -20,7 +22,6 @@ function install_software(){
 	sudo apt remove -y ripgrep
 	export PATH="$PATH:$HOME/.local/bin"
 	cargo install ripgrep
-    sudo gem install neovim-ruby-host
 }
 
 function setup_software(){
