@@ -1,0 +1,8 @@
+theme = dark:catppuccin-frappe,light:catppuccin-latte
+font-feature = -liga
+font-feature = -calt
+# keybind = ctrl+d=ignore
+keybind = cmd+d=ignore
+background-blur-radius = 10
+background-opacity = 0.85
+background = 000000
