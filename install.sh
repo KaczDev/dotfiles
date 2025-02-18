@@ -16,16 +16,15 @@ function link_files() {
 	fi
 }
 function install_software(){
-	sudo apt install stow fzf
-	sudo apt remove ripgrep
+	sudo apt install -y stow fzf
+	sudo apt remove -y ripgrep
 	export PATH="$PATH:$HOME/.local/bin"
 	cargo install ripgrep
     sudo gem install neovim-ruby-host
 }
 
 function setup_software(){
-	nvim --headless "+Lazy! sync" +qa
-    nvim --headless /tmp/tmp  "+MasonToolsInstallSync" +qa
+	nvim --headless "+Lazy! sync" +qa >> ~/install.log 
 }
 
 
