@@ -25,6 +25,10 @@ function install_software(){
 }
 
 function setup_software(){
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+    echo "TMUX plugins installed" >> ~/install.log
+    echo `date +"%Y-%m-%d %T"` >> ~/install.log;
 	nvim --headless "+Lazy! sync" +qa >> ~/install.log 
 }
 
