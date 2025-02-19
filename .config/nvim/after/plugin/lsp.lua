@@ -155,12 +155,15 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	end,
 })
 
--- These are just examples. Replace them with the language
--- servers you have installed in your system
 require('lspconfig').rust_analyzer.setup({})
+-- Ruby
+vim.env.SRB_SKIP_GEM_RBIS = 1
+require("lspconfig")["sorbet"].setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
 
 local cmp = require('cmp')
-
 cmp.setup({
 	sources = {
 		{ name = 'nvim_lsp' },
