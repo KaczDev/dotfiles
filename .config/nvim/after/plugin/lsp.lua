@@ -111,7 +111,7 @@ require('mason-lspconfig').setup({
 		"jqls",
 		"jsonlint",
 		"jsonls",
-		"rubocop",
+		"rubocop@1.62.1",
 		"shellcheck",
 		"yamlls",
 	},
