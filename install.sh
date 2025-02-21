@@ -33,12 +33,12 @@ function setup_software(){
 }
 
 
-echo '🔗 Linking files.' >> ~/install.log;
-echo `date +"%Y-%m-%d %T"` >> ~/install.log;
-link_files
 echo '💽 Installing software' >> ~/install.log;
 echo `date +"%Y-%m-%d %T"` >> ~/install.log;
 install_software
+echo '🔗 Linking files.' >> ~/install.log;
+echo `date +"%Y-%m-%d %T"` >> ~/install.log;
+link_files
 echo '👩<200d>🔧 configure software' >> ~/install.log;
 echo `date +"%Y-%m-%d %T"` >> ~/install.log;
 setup_software
