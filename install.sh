@@ -7,7 +7,7 @@ function link_files() {
 	rm "$HOME/.zsh_aliases"
 	stow -t "$HOME" .
 	rm "$HOME/.gitconfig"
-	mv ./gitconfig_codespaces "$HOME/.gitconfig"
+	mv ./.gitconfig_codespaces "$HOME/.gitconfig"
 	if [ -d /workspaces/github ]; then
 	  sudo ln -sf /workspaces/github/bin/rubocop /usr/local/bin/rubocop
 	  sudo ln -sf /workspaces/github/bin/srb /usr/local/bin/srb
