@@ -2,11 +2,11 @@
 # Github codespaces setup
 
 function link_files() {
-	rm "$HOME/.gitconfig"
+	mv "$HOME/.gitconfig" "$HOME/.gitconfig_cs_default"
 	rm "$HOME/.zshrc"
 	rm "$HOME/.zsh_aliases"
 	stow -t "$HOME" .
-	mv "$HOME/.gitconfig" "$HOME/.gitconfig_default"
+	rm "$HOME/.gitconfig"
 	mv ./.gitconfig_codespaces "$HOME/.gitconfig"
 	if [ -d /workspaces/github ]; then
 	  sudo ln -sf /workspaces/github/bin/rubocop /usr/local/bin/rubocop
