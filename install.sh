@@ -6,7 +6,7 @@ function link_files() {
 	rm "$HOME/.zshrc"
 	rm "$HOME/.zsh_aliases"
 	stow -t "$HOME" .
-	rm "$HOME/.gitconfig"
+	mv "$HOME/.gitconfig" "$HOME/.gitconfig_default"
 	mv ./.gitconfig_codespaces "$HOME/.gitconfig"
 	if [ -d /workspaces/github ]; then
 	  sudo ln -sf /workspaces/github/bin/rubocop /usr/local/bin/rubocop
