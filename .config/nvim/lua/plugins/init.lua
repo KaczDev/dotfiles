@@ -59,4 +59,8 @@ return {
 		ft = { "markdown" },
 		{"hedyhli/outline.nvim",},
 	},
+	-- Lua
+	{
+	  "folke/zen-mode.nvim",
+	}
 }

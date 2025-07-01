@@ -103,7 +103,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-tmux source ~/.config/tmux/tmux.conf
 export PATH=$PATH:/usr/local/go/bin:~/go/bin
 
 export NVM_DIR="$HOME/.nvm"
@@ -112,4 +111,5 @@ export NVM_DIR="$HOME/.nvm"
 export GPG_TTY=$(tty)
 
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-source .zsh_aliases
+source ~/.zsh_aliases
+tmux source ~/.config/tmux/tmux.conf
