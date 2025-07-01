@@ -10,7 +10,7 @@ module.exports = {
         ["Slack", "Microsoft Outlook", "Zoom Workplace"].includes(opener.name),
       browser: {
         name: "Google Chrome",
-        profile: "Default",
+        profile: "KaczDev",
       },
     },
     {
