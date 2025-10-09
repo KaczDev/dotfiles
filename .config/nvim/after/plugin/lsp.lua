@@ -106,13 +106,9 @@ require('mason-lspconfig').setup({
 		"lua_ls",
 		"rust_analyzer",
 		"gopls",
-		"goimports",
-		"golangci-lint",
 		"jqls",
-		"jsonlint",
 		"jsonls",
 		"rubocop@1.62.1",
-		"shellcheck",
 		"yamlls",
 	},
 	handlers = {
