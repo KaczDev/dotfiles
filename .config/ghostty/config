@@ -1,4 +1,4 @@
-theme = dark:catppuccin-frappe,light:catppuccin-latte
+theme = Catppuccin Frappe 
 font-feature = -liga
 font-feature = -calt
 # keybind = ctrl+d=ignore
