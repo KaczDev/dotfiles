@@ -38,10 +38,12 @@ return {
         vscode = true
     },
     {
-        "nvim-treesitter/nvim-treesitter"
+      'nvim-treesitter/nvim-treesitter',
+      lazy = false,
+      build = ':TSUpdate',
+      branch = "main",
     },
     { 'nvim-treesitter/nvim-treesitter-context' },
-    { 'nvim-treesitter/playground' },
     {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
