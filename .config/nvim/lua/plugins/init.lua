@@ -7,22 +7,20 @@ return {
         --     vim.cmd('colorscheme rose-pine')
         -- end
     },
-    {
-        "folke/tokyonight.nvim",
-        lazy = false, -- make sure we load this during startup if it is your main colorscheme
-        priority = 1000, -- make sure to load this before all the other start plugins
-        config = function()
-            -- load the colorscheme here
-            vim.cmd([[colorscheme tokyonight]])
-        end,
+        {
+            "folke/tokyonight.nvim",
+            lazy = false,
+            priority = 1000,
+            opts = {},
     },
     { 'tpope/vim-fugitive' },
+    { 'tpope/vim-rhubarb' }, -- Extension for fugitive
     --lsp
     { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
-    { 'williamboman/mason.nvim' },
-    { 'williamboman/mason-lspconfig.nvim' },
+    { 'mason-org/mason.nvim', opts = {} },
+    { 'mason-org/mason-lspconfig.nvim' },
     -- lsp
     { 'mfussenegger/nvim-lint' },
     {
